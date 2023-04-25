@@ -1,0 +1,684 @@
+
+
+============================== 2023-04-25 12:16:49.984944 | 79b3630c-5ca8-4533-8e4a-200f7bba12ed ==============================
+[0m12:16:49.984944 [info ] [MainThread]: Running with dbt=1.4.6
+[0m12:16:49.986926 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\golia\\.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m12:16:49.987924 [debug] [MainThread]: Tracking: tracking
+[0m12:16:49.987924 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DAF7C46690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DAF6FC1090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DAF6FC37D0>]}
+[0m12:16:50.010863 [debug] [MainThread]: checksum: 0325e47f1211ebbdb24627f81d8289d705fdb573380364d07ab35982cb3d57cd, vars: {}, profile: None, target: None, version: 1.4.6
+[0m12:16:50.013857 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m12:16:50.015849 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '79b3630c-5ca8-4533-8e4a-200f7bba12ed', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DAF7D411D0>]}
+[0m12:16:50.826684 [debug] [MainThread]: 1699: static parser successfully parsed example\my_first_dbt_model.sql
+[0m12:16:50.857609 [debug] [MainThread]: 1699: static parser successfully parsed example\my_second_dbt_model.sql
+[0m12:16:51.068037 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '79b3630c-5ca8-4533-8e4a-200f7bba12ed', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DAF7DA0090>]}
+[0m12:16:51.081999 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '79b3630c-5ca8-4533-8e4a-200f7bba12ed', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DAF7CEBFD0>]}
+[0m12:16:51.082997 [info ] [MainThread]: Found 2 models, 4 tests, 0 snapshots, 0 analyses, 306 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+[0m12:16:51.083992 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '79b3630c-5ca8-4533-8e4a-200f7bba12ed', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DAF71CC410>]}
+[0m12:16:51.085988 [info ] [MainThread]: 
+[0m12:16:51.089978 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m12:16:51.096960 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_AIRBNB'
+[0m12:16:51.126886 [debug] [ThreadPool]: Using snowflake connection "list_AIRBNB"
+[0m12:16:51.127876 [debug] [ThreadPool]: On list_AIRBNB: /* {"app": "dbt", "dbt_version": "1.4.6", "profile_name": "ProjetDbt", "target_name": "dev", "connection_name": "list_AIRBNB"} */
+show terse schemas in database AIRBNB
+    limit 10000
+[0m12:16:51.128873 [debug] [ThreadPool]: Opening a new connection, currently in state init
+
+
+============================== 2023-04-25 12:24:23.837819 | a6f62e15-c373-4ec2-afbd-ac1827c88749 ==============================
+[0m12:24:23.837819 [info ] [MainThread]: Running with dbt=1.4.6
+[0m12:24:23.840453 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\golia\\.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m12:24:23.841455 [debug] [MainThread]: Tracking: tracking
+[0m12:24:23.841455 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000257A0998150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000257A099BD10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000257A01A5ED0>]}
+[0m12:24:23.858408 [debug] [MainThread]: checksum: 0325e47f1211ebbdb24627f81d8289d705fdb573380364d07ab35982cb3d57cd, vars: {}, profile: None, target: None, version: 1.4.6
+[0m12:24:23.937340 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m12:24:23.937340 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m12:24:23.943324 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a6f62e15-c373-4ec2-afbd-ac1827c88749', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002579FCD1E10>]}
+[0m12:24:23.950305 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a6f62e15-c373-4ec2-afbd-ac1827c88749', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000257A0A00B50>]}
+[0m12:24:23.950305 [info ] [MainThread]: Found 2 models, 4 tests, 0 snapshots, 0 analyses, 306 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+[0m12:24:23.951303 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a6f62e15-c373-4ec2-afbd-ac1827c88749', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000257A0909790>]}
+[0m12:24:23.953298 [info ] [MainThread]: 
+[0m12:24:23.955292 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m12:24:23.957288 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_AIRBNB'
+[0m12:24:23.973249 [debug] [ThreadPool]: Using snowflake connection "list_AIRBNB"
+[0m12:24:23.973249 [debug] [ThreadPool]: On list_AIRBNB: /* {"app": "dbt", "dbt_version": "1.4.6", "profile_name": "ProjetDbt", "target_name": "dev", "connection_name": "list_AIRBNB"} */
+show terse schemas in database AIRBNB
+    limit 10000
+[0m12:24:23.974247 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:26:39.361813 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.4.6", "profile_name": "ProjetDbt", "target_name": "dev", "connection_name": "list_AIRBNB"} */
+show terse schemas in database AIRBNB
+    limit 10000
+[0m12:26:39.362812 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m12:26:39.363804 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_schemas
+[0m12:26:39.364801 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m12:26:39.365801 [debug] [ThreadPool]: On list_AIRBNB: No close available on handle
+[0m12:26:39.369755 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:26:39.369755 [debug] [MainThread]: Connection 'list_AIRBNB' was properly closed.
+[0m12:26:39.371568 [info ] [MainThread]: 
+[0m12:26:39.372458 [info ] [MainThread]: Finished running  in 0 hours 2 minutes and 15.42 seconds (135.42s).
+[0m12:26:39.373489 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000257A09E7C90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000257A0E2D750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000257A0A75FD0>]}
+[0m12:26:39.374489 [debug] [MainThread]: Flushing usage events
+[0m12:26:39.985024 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Database error while listing schemas in database "AIRBNB"
+  Database Error
+    250001 (08001): Failed to connect to DB. Verify the account name is correct: account.snowflakecomputing.com:443. 000403: HTTP 403: Forbidden
+
+
+============================== 2023-04-25 13:27:58.683349 | 259f1d41-26c9-476e-8903-61f714ac3115 ==============================
+[0m13:27:58.683349 [info ] [MainThread]: Running with dbt=1.4.6
+[0m13:27:58.686306 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\golia\\.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m13:27:58.687305 [debug] [MainThread]: Tracking: tracking
+[0m13:27:58.712763 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001809092B1D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001808DF90F50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018090878110>]}
+[0m13:27:59.067739 [debug] [MainThread]: Executing "git --help"
+[0m13:27:59.181464 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m13:27:59.181464 [debug] [MainThread]: STDERR: "b''"
+[0m13:27:59.187417 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m13:27:59.188885 [debug] [MainThread]: Using snowflake connection "debug"
+[0m13:27:59.189412 [debug] [MainThread]: On debug: select 1 as id
+[0m13:27:59.189412 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:28:00.279497 [debug] [MainThread]: Snowflake adapter: Error running SQL: select 1 as id
+[0m13:28:00.280494 [debug] [MainThread]: Snowflake adapter: Rolling back transaction.
+[0m13:28:00.281492 [debug] [MainThread]: On debug: No close available on handle
+[0m13:28:00.285482 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000180910A5A10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018090B73090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001809191DB50>]}
+[0m13:28:00.286480 [debug] [MainThread]: Flushing usage events
+[0m13:28:00.291464 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m13:28:00.291464 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2023-04-25 13:30:13.121553 | 38d87032-d1c2-4f35-b850-a6d54103a818 ==============================
+[0m13:30:13.121553 [info ] [MainThread]: Running with dbt=1.4.6
+[0m13:30:13.129534 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\golia\\.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m13:30:13.130532 [debug] [MainThread]: Tracking: tracking
+[0m13:30:13.167431 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A719CEA850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A7173B0F50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A719D4A850>]}
+[0m13:30:13.776800 [debug] [MainThread]: Executing "git --help"
+[0m13:30:13.899471 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m13:30:13.900469 [debug] [MainThread]: STDERR: "b''"
+[0m13:30:13.906454 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m13:30:13.907451 [debug] [MainThread]: Using snowflake connection "debug"
+[0m13:30:13.907451 [debug] [MainThread]: On debug: select 1 as id
+[0m13:30:13.908447 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:32:24.783817 [debug] [MainThread]: Snowflake adapter: Error running SQL: select 1 as id
+[0m13:32:24.783817 [debug] [MainThread]: Snowflake adapter: Rolling back transaction.
+[0m13:32:24.784843 [debug] [MainThread]: On debug: No close available on handle
+[0m13:32:24.787809 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A719CAFCD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A71A4C7890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A71A4C5BD0>]}
+[0m13:32:24.788806 [debug] [MainThread]: Flushing usage events
+[0m13:32:29.202631 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2023-04-25 13:33:55.895995 | 7f84163b-f3ae-4d40-95c8-50d85bc29f5d ==============================
+[0m13:33:55.895995 [info ] [MainThread]: Running with dbt=1.4.6
+[0m13:33:55.898988 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\golia\\.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m13:33:55.898988 [debug] [MainThread]: Tracking: tracking
+[0m13:33:55.927911 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002501BAB2050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002501B8580D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002501B7D2BD0>]}
+[0m13:33:56.279968 [debug] [MainThread]: Executing "git --help"
+[0m13:33:56.421589 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m13:33:56.422586 [debug] [MainThread]: STDERR: "b''"
+[0m13:33:56.426575 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m13:33:56.427572 [debug] [MainThread]: Using snowflake connection "debug"
+[0m13:33:56.427572 [debug] [MainThread]: On debug: select 1 as id
+[0m13:33:56.427572 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:36:08.608569 [debug] [MainThread]: Snowflake adapter: Error running SQL: select 1 as id
+[0m13:36:08.609567 [debug] [MainThread]: Snowflake adapter: Rolling back transaction.
+[0m13:36:08.610527 [debug] [MainThread]: On debug: No close available on handle
+[0m13:36:08.616515 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002501BB40BD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002501C835CD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002501C835910>]}
+[0m13:36:08.617542 [debug] [MainThread]: Flushing usage events
+[0m13:36:09.001631 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2023-04-25 13:38:14.378426 | 1b8231cb-eabb-44d2-acc3-459ce1d05a8d ==============================
+[0m13:38:14.378426 [info ] [MainThread]: Running with dbt=1.4.6
+[0m13:38:14.380406 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\golia\\.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m13:38:14.381395 [debug] [MainThread]: Tracking: tracking
+[0m13:38:14.401315 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002931FC26750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002931FBF2890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002931F9AA890>]}
+[0m13:38:14.737414 [debug] [MainThread]: Executing "git --help"
+[0m13:38:14.835146 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m13:38:14.836143 [debug] [MainThread]: STDERR: "b''"
+[0m13:38:14.843152 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m13:38:14.844122 [debug] [MainThread]: Using snowflake connection "debug"
+[0m13:38:14.844122 [debug] [MainThread]: On debug: select 1 as id
+[0m13:38:14.845143 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:40:24.175623 [debug] [MainThread]: Snowflake adapter: Error running SQL: select 1 as id
+[0m13:40:24.175623 [debug] [MainThread]: Snowflake adapter: Rolling back transaction.
+[0m13:40:24.176576 [debug] [MainThread]: On debug: No close available on handle
+[0m13:40:24.179568 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002931F9215D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002931FC90250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002932015BC10>]}
+[0m13:40:24.180567 [debug] [MainThread]: Flushing usage events
+[0m13:40:24.624665 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2023-04-25 13:46:22.453399 | 74d07cb1-5c45-47f0-aac2-41c073edf15b ==============================
+[0m13:46:22.453399 [info ] [MainThread]: Running with dbt=1.4.6
+[0m13:46:22.456398 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\golia\\.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m13:46:22.457388 [debug] [MainThread]: Tracking: tracking
+[0m13:46:22.475339 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000122184A1A90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000122181D9E90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000122189AEBD0>]}
+[0m13:46:22.804460 [debug] [MainThread]: Executing "git --help"
+[0m13:46:22.912617 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m13:46:22.913600 [debug] [MainThread]: STDERR: "b''"
+[0m13:46:22.917591 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m13:46:22.919570 [debug] [MainThread]: Using snowflake connection "debug"
+[0m13:46:22.919570 [debug] [MainThread]: On debug: select 1 as id
+[0m13:46:22.920565 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:46:24.522273 [debug] [MainThread]: SQL status: SUCCESS 1 in 2 seconds
+[0m13:46:24.523271 [debug] [MainThread]: On debug: Close
+[0m13:46:24.614029 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012218476DD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000122189C7090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000122189C6E90>]}
+[0m13:46:24.615026 [debug] [MainThread]: Flushing usage events
+[0m13:46:24.993064 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2023-04-25 13:53:51.426852 | fcffcd97-e013-4b69-94c2-438920826690 ==============================
+[0m13:53:51.426852 [info ] [MainThread]: Running with dbt=1.4.6
+[0m13:53:51.429844 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\golia\\.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m13:53:51.429844 [debug] [MainThread]: Tracking: tracking
+[0m13:53:51.432887 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B7E77ED3D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B7E6FA1890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B7E6FA1C10>]}
+[0m13:53:51.446832 [debug] [MainThread]: checksum: 0325e47f1211ebbdb24627f81d8289d705fdb573380364d07ab35982cb3d57cd, vars: {}, profile: None, target: None, version: 1.4.6
+[0m13:53:51.460111 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m13:53:51.462113 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'fcffcd97-e013-4b69-94c2-438920826690', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B7E7281A50>]}
+[0m13:53:52.133555 [debug] [MainThread]: 1699: static parser successfully parsed example\my_first_dbt_model.sql
+[0m13:53:52.145548 [debug] [MainThread]: 1699: static parser successfully parsed example\my_second_dbt_model.sql
+[0m13:53:52.243259 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'fcffcd97-e013-4b69-94c2-438920826690', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B7E80B6390>]}
+[0m13:53:52.249244 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'fcffcd97-e013-4b69-94c2-438920826690', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B7E8148810>]}
+[0m13:53:52.250241 [info ] [MainThread]: Found 2 models, 4 tests, 0 snapshots, 0 analyses, 306 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+[0m13:53:52.251240 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'fcffcd97-e013-4b69-94c2-438920826690', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B7E7256590>]}
+[0m13:53:52.252264 [info ] [MainThread]: 
+[0m13:53:52.255242 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m13:53:52.260230 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_AIRBNB'
+[0m13:53:52.278170 [debug] [ThreadPool]: Using snowflake connection "list_AIRBNB"
+[0m13:53:52.279166 [debug] [ThreadPool]: On list_AIRBNB: /* {"app": "dbt", "dbt_version": "1.4.6", "profile_name": "ProjetDbt", "target_name": "dev", "connection_name": "list_AIRBNB"} */
+show terse schemas in database AIRBNB
+    limit 10000
+[0m13:53:52.279166 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:53:53.779973 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 2 seconds
+[0m13:53:53.782964 [debug] [ThreadPool]: On list_AIRBNB: Close
+[0m13:53:53.881816 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_AIRBNB_RAW'
+[0m13:53:53.890789 [debug] [ThreadPool]: Using snowflake connection "list_AIRBNB_RAW"
+[0m13:53:53.891799 [debug] [ThreadPool]: On list_AIRBNB_RAW: /* {"app": "dbt", "dbt_version": "1.4.6", "profile_name": "ProjetDbt", "target_name": "dev", "connection_name": "list_AIRBNB_RAW"} */
+show terse objects in AIRBNB.RAW
+[0m13:53:53.891799 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:53:55.139147 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1 seconds
+[0m13:53:55.145092 [debug] [ThreadPool]: On list_AIRBNB_RAW: Close
+[0m13:53:55.254745 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'fcffcd97-e013-4b69-94c2-438920826690', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B7E7FC2110>]}
+[0m13:53:55.254745 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m13:53:55.256740 [info ] [MainThread]: 
+[0m13:53:58.650514 [debug] [Thread-1 (]: Began running node model.ProjetDbt.my_first_dbt_model
+[0m13:53:58.651515 [info ] [Thread-1 (]: 1 of 2 START sql table model RAW.my_first_dbt_model ............................ [RUN]
+[0m13:53:58.652513 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.ProjetDbt.my_first_dbt_model'
+[0m13:53:58.653510 [debug] [Thread-1 (]: Began compiling node model.ProjetDbt.my_first_dbt_model
+[0m13:53:58.656522 [debug] [Thread-1 (]: Writing injected SQL for node "model.ProjetDbt.my_first_dbt_model"
+[0m13:53:58.660490 [debug] [Thread-1 (]: Timing info for model.ProjetDbt.my_first_dbt_model (compile): 2023-04-25 13:53:58.653510 => 2023-04-25 13:53:58.660490
+[0m13:53:58.660490 [debug] [Thread-1 (]: Began executing node model.ProjetDbt.my_first_dbt_model
+[0m13:53:58.703375 [debug] [Thread-1 (]: Writing runtime sql for node "model.ProjetDbt.my_first_dbt_model"
+[0m13:53:58.708362 [debug] [Thread-1 (]: Using snowflake connection "model.ProjetDbt.my_first_dbt_model"
+[0m13:53:58.709360 [debug] [Thread-1 (]: On model.ProjetDbt.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.4.6", "profile_name": "ProjetDbt", "target_name": "dev", "node_id": "model.ProjetDbt.my_first_dbt_model"} */
+create or replace transient table AIRBNB.RAW.my_first_dbt_model  as
+        (/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+        );
+[0m13:53:58.710357 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m13:54:01.003526 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 2 seconds
+[0m13:54:01.023469 [debug] [Thread-1 (]: Timing info for model.ProjetDbt.my_first_dbt_model (execute): 2023-04-25 13:53:58.661514 => 2023-04-25 13:54:01.023469
+[0m13:54:01.024467 [debug] [Thread-1 (]: On model.ProjetDbt.my_first_dbt_model: Close
+[0m13:54:01.127322 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fcffcd97-e013-4b69-94c2-438920826690', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B7E7FC2D10>]}
+[0m13:54:01.129317 [info ] [Thread-1 (]: 1 of 2 OK created sql table model RAW.my_first_dbt_model ....................... [[32mSUCCESS 1[0m in 2.48s]
+[0m13:54:01.136141 [debug] [Thread-1 (]: Finished running node model.ProjetDbt.my_first_dbt_model
+[0m13:54:01.138129 [debug] [Thread-1 (]: Began running node model.ProjetDbt.my_second_dbt_model
+[0m13:54:01.138129 [info ] [Thread-1 (]: 2 of 2 START sql view model RAW.my_second_dbt_model ............................ [RUN]
+[0m13:54:01.140126 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.ProjetDbt.my_second_dbt_model'
+[0m13:54:01.141149 [debug] [Thread-1 (]: Began compiling node model.ProjetDbt.my_second_dbt_model
+[0m13:54:01.144114 [debug] [Thread-1 (]: Writing injected SQL for node "model.ProjetDbt.my_second_dbt_model"
+[0m13:54:01.147109 [debug] [Thread-1 (]: Timing info for model.ProjetDbt.my_second_dbt_model (compile): 2023-04-25 13:54:01.141149 => 2023-04-25 13:54:01.146109
+[0m13:54:01.148104 [debug] [Thread-1 (]: Began executing node model.ProjetDbt.my_second_dbt_model
+[0m13:54:01.171073 [debug] [Thread-1 (]: Writing runtime sql for node "model.ProjetDbt.my_second_dbt_model"
+[0m13:54:01.172042 [debug] [Thread-1 (]: Using snowflake connection "model.ProjetDbt.my_second_dbt_model"
+[0m13:54:01.173036 [debug] [Thread-1 (]: On model.ProjetDbt.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.4.6", "profile_name": "ProjetDbt", "target_name": "dev", "node_id": "model.ProjetDbt.my_second_dbt_model"} */
+create or replace   view AIRBNB.RAW.my_second_dbt_model
+  
+   as (
+    -- Use the `ref` function to select from other models
+
+select *
+from AIRBNB.RAW.my_first_dbt_model
+where id = 1
+  );
+[0m13:54:01.173036 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:54:02.197335 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1 seconds
+[0m13:54:02.201310 [debug] [Thread-1 (]: Timing info for model.ProjetDbt.my_second_dbt_model (execute): 2023-04-25 13:54:01.148104 => 2023-04-25 13:54:02.201310
+[0m13:54:02.202309 [debug] [Thread-1 (]: On model.ProjetDbt.my_second_dbt_model: Close
+[0m13:54:02.298091 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fcffcd97-e013-4b69-94c2-438920826690', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B7E961B790>]}
+[0m13:54:02.300080 [info ] [Thread-1 (]: 2 of 2 OK created sql view model RAW.my_second_dbt_model ....................... [[32mSUCCESS 1[0m in 1.16s]
+[0m13:54:02.304032 [debug] [Thread-1 (]: Finished running node model.ProjetDbt.my_second_dbt_model
+[0m13:54:02.309018 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m13:54:02.311012 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:54:02.312007 [debug] [MainThread]: Connection 'list_AIRBNB' was properly closed.
+[0m13:54:02.312007 [debug] [MainThread]: Connection 'list_AIRBNB_RAW' was properly closed.
+[0m13:54:02.312007 [debug] [MainThread]: Connection 'model.ProjetDbt.my_second_dbt_model' was properly closed.
+[0m13:54:02.313007 [info ] [MainThread]: 
+[0m13:54:02.314012 [info ] [MainThread]: Finished running 1 table model, 1 view model in 0 hours 0 minutes and 10.06 seconds (10.06s).
+[0m13:54:02.315002 [debug] [MainThread]: Command end result
+[0m13:54:02.326971 [info ] [MainThread]: 
+[0m13:54:02.327968 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m13:54:02.328964 [info ] [MainThread]: 
+[0m13:54:02.330960 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[0m13:54:02.331956 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B7E6FCF290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B7E77B2D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B7E72A5390>]}
+[0m13:54:02.332953 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-04-25 14:17:42.974440 | e887bd1c-2465-4752-b28b-58d7fea5d8a5 ==============================
+[0m14:17:42.974440 [info ] [MainThread]: Running with dbt=1.4.6
+[0m14:17:42.976148 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\golia\\.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'indirect_selection': 'eager', 'which': 'test', 'rpc_method': 'test'}
+[0m14:17:42.977149 [debug] [MainThread]: Tracking: tracking
+[0m14:17:42.977149 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C98EA79610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C98FAB1E10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C98F2A0410>]}
+[0m14:17:42.992140 [debug] [MainThread]: checksum: 0325e47f1211ebbdb24627f81d8289d705fdb573380364d07ab35982cb3d57cd, vars: {}, profile: None, target: None, version: 1.4.6
+[0m14:17:43.062944 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 2 files added, 0 files changed.
+[0m14:17:43.063946 [debug] [MainThread]: Partial parsing: added file: ProjetDbt://models\src\src_hosts.sql
+[0m14:17:43.063946 [debug] [MainThread]: Partial parsing: added file: ProjetDbt://models\src\schema.yml
+[0m14:17:43.079906 [debug] [MainThread]: 1699: static parser successfully parsed src\src_hosts.sql
+[0m14:17:43.100851 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'dim_listings' in the 'models' section of file 'models\src\schema.yml'
+[0m14:17:43.104450 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'dim_hosts' in the 'models' section of file 'models\src\schema.yml'
+[0m14:17:43.108438 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'fct_reviews' in the 'models' section of file 'models\src\schema.yml'
+[0m14:17:43.186262 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.ProjetDbt.unique_dim_listings_listing_id.bbd176f487' (models\src\schema.yml) depends on a node named 'dim_listings' in package '' which was not found
+[0m14:17:43.187237 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.ProjetDbt.not_null_dim_listings_listing_id.7cf2f13e6c' (models\src\schema.yml) depends on a node named 'dim_listings' in package '' which was not found
+[0m14:17:43.189225 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.ProjetDbt.not_null_dim_listings_host_id.b1db6ea6c2' (models\src\schema.yml) depends on a node named 'dim_listings' in package '' which was not found
+[0m14:17:43.190220 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.ProjetDbt.relationships_dim_listings_host_id__host_id__ref_dim_hosts_.94f20ee5a1' (models\src\schema.yml) depends on a node named 'dim_hosts' in package '' which was not found
+[0m14:17:43.191216 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.ProjetDbt.relationships_dim_listings_host_id__host_id__ref_dim_hosts_.94f20ee5a1' (models\src\schema.yml) depends on a node named 'dim_listings' in package '' which was not found
+[0m14:17:43.193212 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.ProjetDbt.accepted_values_dim_listings_room_type__Entire_home_apt__Private_room__Shared_room__Hotel_room.296f64c43c' (models\src\schema.yml) depends on a node named 'dim_listings' in package '' which was not found
+[0m14:17:43.194208 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.ProjetDbt.not_null_dim_hosts_host_id.091b631476' (models\src\schema.yml) depends on a node named 'dim_hosts' in package '' which was not found
+[0m14:17:43.195205 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.ProjetDbt.unique_dim_hosts_host_id.d6a570a203' (models\src\schema.yml) depends on a node named 'dim_hosts' in package '' which was not found
+[0m14:17:43.196204 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.ProjetDbt.not_null_dim_hosts_host_name.03a9762184' (models\src\schema.yml) depends on a node named 'dim_hosts' in package '' which was not found
+[0m14:17:43.198198 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.ProjetDbt.accepted_values_dim_hosts_is_superhost__t__f.7b605383d4' (models\src\schema.yml) depends on a node named 'dim_hosts' in package '' which was not found
+[0m14:17:43.199195 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.ProjetDbt.relationships_fct_reviews_listing_id__listing_id__ref_dim_listings_.4b1542adb7' (models\src\schema.yml) depends on a node named 'dim_listings' in package '' which was not found
+[0m14:17:43.200195 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.ProjetDbt.relationships_fct_reviews_listing_id__listing_id__ref_dim_listings_.4b1542adb7' (models\src\schema.yml) depends on a node named 'fct_reviews' in package '' which was not found
+[0m14:17:43.201190 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.ProjetDbt.not_null_fct_reviews_reviewer_name.8204e43c88' (models\src\schema.yml) depends on a node named 'fct_reviews' in package '' which was not found
+[0m14:17:43.202199 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.ProjetDbt.accepted_values_fct_reviews_review_sentiment__positive__neutral__negative.7309aafcef' (models\src\schema.yml) depends on a node named 'fct_reviews' in package '' which was not found
+[0m14:17:43.214175 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e887bd1c-2465-4752-b28b-58d7fea5d8a5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C98FCA0650>]}
+[0m14:17:43.223132 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e887bd1c-2465-4752-b28b-58d7fea5d8a5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C98FC57410>]}
+[0m14:17:43.224130 [info ] [MainThread]: Found 3 models, 4 tests, 0 snapshots, 0 analyses, 306 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+[0m14:17:43.225126 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e887bd1c-2465-4752-b28b-58d7fea5d8a5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C98FADD8D0>]}
+[0m14:17:43.228118 [info ] [MainThread]: 
+[0m14:17:43.231138 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m14:17:43.233104 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_AIRBNB_RAW'
+[0m14:17:43.250059 [debug] [ThreadPool]: Using snowflake connection "list_AIRBNB_RAW"
+[0m14:17:43.251056 [debug] [ThreadPool]: On list_AIRBNB_RAW: /* {"app": "dbt", "dbt_version": "1.4.6", "profile_name": "ProjetDbt", "target_name": "dev", "connection_name": "list_AIRBNB_RAW"} */
+show terse objects in AIRBNB.RAW
+[0m14:17:43.251056 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:17:45.082539 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 2 seconds
+[0m14:17:45.085531 [debug] [ThreadPool]: On list_AIRBNB_RAW: Close
+[0m14:17:45.268042 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e887bd1c-2465-4752-b28b-58d7fea5d8a5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C98E611150>]}
+[0m14:17:45.269039 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m14:17:45.270037 [info ] [MainThread]: 
+[0m14:17:45.279012 [debug] [Thread-1 (]: Began running node test.ProjetDbt.not_null_my_first_dbt_model_id.5fb22c2710
+[0m14:17:45.280010 [info ] [Thread-1 (]: 1 of 4 START test not_null_my_first_dbt_model_id ............................... [RUN]
+[0m14:17:45.282006 [debug] [Thread-1 (]: Acquiring new snowflake connection 'test.ProjetDbt.not_null_my_first_dbt_model_id.5fb22c2710'
+[0m14:17:45.283002 [debug] [Thread-1 (]: Began compiling node test.ProjetDbt.not_null_my_first_dbt_model_id.5fb22c2710
+[0m14:17:45.302948 [debug] [Thread-1 (]: Writing injected SQL for node "test.ProjetDbt.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m14:17:45.305943 [debug] [Thread-1 (]: Timing info for test.ProjetDbt.not_null_my_first_dbt_model_id.5fb22c2710 (compile): 2023-04-25 14:17:45.284007 => 2023-04-25 14:17:45.305943
+[0m14:17:45.306939 [debug] [Thread-1 (]: Began executing node test.ProjetDbt.not_null_my_first_dbt_model_id.5fb22c2710
+[0m14:17:45.352818 [debug] [Thread-1 (]: Writing runtime sql for node "test.ProjetDbt.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m14:17:45.355808 [debug] [Thread-1 (]: Using snowflake connection "test.ProjetDbt.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m14:17:45.355808 [debug] [Thread-1 (]: On test.ProjetDbt.not_null_my_first_dbt_model_id.5fb22c2710: /* {"app": "dbt", "dbt_version": "1.4.6", "profile_name": "ProjetDbt", "target_name": "dev", "node_id": "test.ProjetDbt.not_null_my_first_dbt_model_id.5fb22c2710"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select id
+from AIRBNB.RAW.my_first_dbt_model
+where id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m14:17:45.356805 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m14:17:47.517665 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 2 seconds
+[0m14:17:47.582688 [debug] [Thread-1 (]: Timing info for test.ProjetDbt.not_null_my_first_dbt_model_id.5fb22c2710 (execute): 2023-04-25 14:17:45.308939 => 2023-04-25 14:17:47.582688
+[0m14:17:47.583685 [debug] [Thread-1 (]: On test.ProjetDbt.not_null_my_first_dbt_model_id.5fb22c2710: Close
+[0m14:17:47.765082 [error] [Thread-1 (]: 1 of 4 FAIL 1 not_null_my_first_dbt_model_id ................................... [[31mFAIL 1[0m in 2.48s]
+[0m14:17:47.767077 [debug] [Thread-1 (]: Finished running node test.ProjetDbt.not_null_my_first_dbt_model_id.5fb22c2710
+[0m14:17:47.768073 [debug] [Thread-1 (]: Began running node test.ProjetDbt.not_null_my_second_dbt_model_id.151b76d778
+[0m14:17:47.769043 [info ] [Thread-1 (]: 2 of 4 START test not_null_my_second_dbt_model_id .............................. [RUN]
+[0m14:17:47.770043 [debug] [Thread-1 (]: Acquiring new snowflake connection 'test.ProjetDbt.not_null_my_second_dbt_model_id.151b76d778'
+[0m14:17:47.770043 [debug] [Thread-1 (]: Began compiling node test.ProjetDbt.not_null_my_second_dbt_model_id.151b76d778
+[0m14:17:47.775035 [debug] [Thread-1 (]: Writing injected SQL for node "test.ProjetDbt.not_null_my_second_dbt_model_id.151b76d778"
+[0m14:17:47.778018 [debug] [Thread-1 (]: Timing info for test.ProjetDbt.not_null_my_second_dbt_model_id.151b76d778 (compile): 2023-04-25 14:17:47.771039 => 2023-04-25 14:17:47.778018
+[0m14:17:47.779021 [debug] [Thread-1 (]: Began executing node test.ProjetDbt.not_null_my_second_dbt_model_id.151b76d778
+[0m14:17:47.783006 [debug] [Thread-1 (]: Writing runtime sql for node "test.ProjetDbt.not_null_my_second_dbt_model_id.151b76d778"
+[0m14:17:47.785001 [debug] [Thread-1 (]: Using snowflake connection "test.ProjetDbt.not_null_my_second_dbt_model_id.151b76d778"
+[0m14:17:47.785001 [debug] [Thread-1 (]: On test.ProjetDbt.not_null_my_second_dbt_model_id.151b76d778: /* {"app": "dbt", "dbt_version": "1.4.6", "profile_name": "ProjetDbt", "target_name": "dev", "node_id": "test.ProjetDbt.not_null_my_second_dbt_model_id.151b76d778"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select id
+from AIRBNB.RAW.my_second_dbt_model
+where id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m14:17:47.785001 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:17:49.443279 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 2 seconds
+[0m14:17:49.447266 [debug] [Thread-1 (]: Timing info for test.ProjetDbt.not_null_my_second_dbt_model_id.151b76d778 (execute): 2023-04-25 14:17:47.780044 => 2023-04-25 14:17:49.446270
+[0m14:17:49.447266 [debug] [Thread-1 (]: On test.ProjetDbt.not_null_my_second_dbt_model_id.151b76d778: Close
+[0m14:17:49.623000 [info ] [Thread-1 (]: 2 of 4 PASS not_null_my_second_dbt_model_id .................................... [[32mPASS[0m in 1.85s]
+[0m14:17:49.625955 [debug] [Thread-1 (]: Finished running node test.ProjetDbt.not_null_my_second_dbt_model_id.151b76d778
+[0m14:17:49.627949 [debug] [Thread-1 (]: Began running node test.ProjetDbt.unique_my_first_dbt_model_id.16e066b321
+[0m14:17:49.628945 [info ] [Thread-1 (]: 3 of 4 START test unique_my_first_dbt_model_id ................................. [RUN]
+[0m14:17:49.632935 [debug] [Thread-1 (]: Acquiring new snowflake connection 'test.ProjetDbt.unique_my_first_dbt_model_id.16e066b321'
+[0m14:17:49.633932 [debug] [Thread-1 (]: Began compiling node test.ProjetDbt.unique_my_first_dbt_model_id.16e066b321
+[0m14:17:49.643900 [debug] [Thread-1 (]: Writing injected SQL for node "test.ProjetDbt.unique_my_first_dbt_model_id.16e066b321"
+[0m14:17:49.646889 [debug] [Thread-1 (]: Timing info for test.ProjetDbt.unique_my_first_dbt_model_id.16e066b321 (compile): 2023-04-25 14:17:49.634941 => 2023-04-25 14:17:49.646889
+[0m14:17:49.647908 [debug] [Thread-1 (]: Began executing node test.ProjetDbt.unique_my_first_dbt_model_id.16e066b321
+[0m14:17:49.650464 [debug] [Thread-1 (]: Writing runtime sql for node "test.ProjetDbt.unique_my_first_dbt_model_id.16e066b321"
+[0m14:17:49.651731 [debug] [Thread-1 (]: Using snowflake connection "test.ProjetDbt.unique_my_first_dbt_model_id.16e066b321"
+[0m14:17:49.652730 [debug] [Thread-1 (]: On test.ProjetDbt.unique_my_first_dbt_model_id.16e066b321: /* {"app": "dbt", "dbt_version": "1.4.6", "profile_name": "ProjetDbt", "target_name": "dev", "node_id": "test.ProjetDbt.unique_my_first_dbt_model_id.16e066b321"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    id as unique_field,
+    count(*) as n_records
+
+from AIRBNB.RAW.my_first_dbt_model
+where id is not null
+group by id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m14:17:49.652730 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:17:50.614147 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1 seconds
+[0m14:17:50.618121 [debug] [Thread-1 (]: Timing info for test.ProjetDbt.unique_my_first_dbt_model_id.16e066b321 (execute): 2023-04-25 14:17:49.648434 => 2023-04-25 14:17:50.618121
+[0m14:17:50.619121 [debug] [Thread-1 (]: On test.ProjetDbt.unique_my_first_dbt_model_id.16e066b321: Close
+[0m14:17:50.714439 [info ] [Thread-1 (]: 3 of 4 PASS unique_my_first_dbt_model_id ....................................... [[32mPASS[0m in 1.08s]
+[0m14:17:50.717113 [debug] [Thread-1 (]: Finished running node test.ProjetDbt.unique_my_first_dbt_model_id.16e066b321
+[0m14:17:50.719104 [debug] [Thread-1 (]: Began running node test.ProjetDbt.unique_my_second_dbt_model_id.57a0f8c493
+[0m14:17:50.720140 [info ] [Thread-1 (]: 4 of 4 START test unique_my_second_dbt_model_id ................................ [RUN]
+[0m14:17:50.722139 [debug] [Thread-1 (]: Acquiring new snowflake connection 'test.ProjetDbt.unique_my_second_dbt_model_id.57a0f8c493'
+[0m14:17:50.723133 [debug] [Thread-1 (]: Began compiling node test.ProjetDbt.unique_my_second_dbt_model_id.57a0f8c493
+[0m14:17:50.731072 [debug] [Thread-1 (]: Writing injected SQL for node "test.ProjetDbt.unique_my_second_dbt_model_id.57a0f8c493"
+[0m14:17:50.733066 [debug] [Thread-1 (]: Timing info for test.ProjetDbt.unique_my_second_dbt_model_id.57a0f8c493 (compile): 2023-04-25 14:17:50.724092 => 2023-04-25 14:17:50.733066
+[0m14:17:50.734063 [debug] [Thread-1 (]: Began executing node test.ProjetDbt.unique_my_second_dbt_model_id.57a0f8c493
+[0m14:17:50.737055 [debug] [Thread-1 (]: Writing runtime sql for node "test.ProjetDbt.unique_my_second_dbt_model_id.57a0f8c493"
+[0m14:17:50.738211 [debug] [Thread-1 (]: Using snowflake connection "test.ProjetDbt.unique_my_second_dbt_model_id.57a0f8c493"
+[0m14:17:50.739211 [debug] [Thread-1 (]: On test.ProjetDbt.unique_my_second_dbt_model_id.57a0f8c493: /* {"app": "dbt", "dbt_version": "1.4.6", "profile_name": "ProjetDbt", "target_name": "dev", "node_id": "test.ProjetDbt.unique_my_second_dbt_model_id.57a0f8c493"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    id as unique_field,
+    count(*) as n_records
+
+from AIRBNB.RAW.my_second_dbt_model
+where id is not null
+group by id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m14:17:50.739211 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:17:51.766333 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1 seconds
+[0m14:17:51.771353 [debug] [Thread-1 (]: Timing info for test.ProjetDbt.unique_my_second_dbt_model_id.57a0f8c493 (execute): 2023-04-25 14:17:50.734063 => 2023-04-25 14:17:51.771353
+[0m14:17:51.772314 [debug] [Thread-1 (]: On test.ProjetDbt.unique_my_second_dbt_model_id.57a0f8c493: Close
+[0m14:17:51.868781 [info ] [Thread-1 (]: 4 of 4 PASS unique_my_second_dbt_model_id ...................................... [[32mPASS[0m in 1.15s]
+[0m14:17:51.871732 [debug] [Thread-1 (]: Finished running node test.ProjetDbt.unique_my_second_dbt_model_id.57a0f8c493
+[0m14:17:51.876717 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m14:17:51.879750 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:17:51.880734 [debug] [MainThread]: Connection 'list_AIRBNB_RAW' was properly closed.
+[0m14:17:51.880734 [debug] [MainThread]: Connection 'test.ProjetDbt.unique_my_second_dbt_model_id.57a0f8c493' was properly closed.
+[0m14:17:51.880734 [info ] [MainThread]: 
+[0m14:17:51.881735 [info ] [MainThread]: Finished running 4 tests in 0 hours 0 minutes and 8.65 seconds (8.65s).
+[0m14:17:51.882696 [debug] [MainThread]: Command end result
+[0m14:17:51.892676 [info ] [MainThread]: 
+[0m14:17:51.893675 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m14:17:51.894667 [info ] [MainThread]: 
+[0m14:17:51.895663 [error] [MainThread]: [31mFailure in test not_null_my_first_dbt_model_id (models\example\schema.yml)[0m
+[0m14:17:51.897656 [error] [MainThread]:   Got 1 result, configured to fail if != 0
+[0m14:17:51.898654 [info ] [MainThread]: 
+[0m14:17:51.899653 [info ] [MainThread]:   compiled Code at target\compiled\ProjetDbt\models\example\schema.yml\not_null_my_first_dbt_model_id.sql
+[0m14:17:51.900649 [info ] [MainThread]: 
+[0m14:17:51.902644 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=1 SKIP=0 TOTAL=4
+[0m14:17:51.903640 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C98FFAA810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C98E610C90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C98E611150>]}
+[0m14:17:51.903640 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-04-25 14:32:18.602330 | c99a7555-aad9-4af1-ba30-8335f935661d ==============================
+[0m14:32:18.602330 [info ] [MainThread]: Running with dbt=1.4.6
+[0m14:32:18.604326 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\golia\\.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m14:32:18.605351 [debug] [MainThread]: Tracking: tracking
+[0m14:32:18.605351 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020B2CD6BED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020B2CD6A7D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020B2CD6AD10>]}
+[0m14:32:18.620316 [debug] [MainThread]: checksum: 0325e47f1211ebbdb24627f81d8289d705fdb573380364d07ab35982cb3d57cd, vars: {}, profile: None, target: None, version: 1.4.6
+[0m14:32:18.705057 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 1 files changed.
+[0m14:32:18.706073 [debug] [MainThread]: Partial parsing: added file: ProjetDbt://models\src\sources.yml
+[0m14:32:18.707071 [debug] [MainThread]: Partial parsing: updated file: ProjetDbt://models\src\src_hosts.sql
+[0m14:32:18.724030 [debug] [MainThread]: 1699: static parser successfully parsed src\src_hosts.sql
+[0m14:32:18.749969 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c99a7555-aad9-4af1-ba30-8335f935661d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020B2BDD48D0>]}
+[0m14:32:18.757948 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c99a7555-aad9-4af1-ba30-8335f935661d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020B2CE6E490>]}
+[0m14:32:18.757948 [info ] [MainThread]: Found 3 models, 4 tests, 0 snapshots, 0 analyses, 306 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+[0m14:32:18.758949 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c99a7555-aad9-4af1-ba30-8335f935661d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020B2BDBB590>]}
+[0m14:32:18.760942 [info ] [MainThread]: 
+[0m14:32:18.763919 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m14:32:18.765893 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_AIRBNB'
+[0m14:32:18.782849 [debug] [ThreadPool]: Using snowflake connection "list_AIRBNB"
+[0m14:32:18.782849 [debug] [ThreadPool]: On list_AIRBNB: /* {"app": "dbt", "dbt_version": "1.4.6", "profile_name": "ProjetDbt", "target_name": "dev", "connection_name": "list_AIRBNB"} */
+show terse schemas in database AIRBNB
+    limit 10000
+[0m14:32:18.782849 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:32:20.718198 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 2 seconds
+[0m14:32:20.720194 [debug] [ThreadPool]: On list_AIRBNB: Close
+[0m14:32:20.893797 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_AIRBNB_RAW'
+[0m14:32:20.905778 [debug] [ThreadPool]: Using snowflake connection "list_AIRBNB_RAW"
+[0m14:32:20.906761 [debug] [ThreadPool]: On list_AIRBNB_RAW: /* {"app": "dbt", "dbt_version": "1.4.6", "profile_name": "ProjetDbt", "target_name": "dev", "connection_name": "list_AIRBNB_RAW"} */
+show terse objects in AIRBNB.RAW
+[0m14:32:20.906761 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:32:21.876451 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 1 seconds
+[0m14:32:21.879435 [debug] [ThreadPool]: On list_AIRBNB_RAW: Close
+[0m14:32:22.083299 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c99a7555-aad9-4af1-ba30-8335f935661d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020B2C535B90>]}
+[0m14:32:22.084296 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m14:32:22.085605 [info ] [MainThread]: 
+[0m14:32:22.091611 [debug] [Thread-1 (]: Began running node model.ProjetDbt.my_first_dbt_model
+[0m14:32:22.092589 [info ] [Thread-1 (]: 1 of 3 START sql table model RAW.my_first_dbt_model ............................ [RUN]
+[0m14:32:22.093586 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.ProjetDbt.my_first_dbt_model'
+[0m14:32:22.094583 [debug] [Thread-1 (]: Began compiling node model.ProjetDbt.my_first_dbt_model
+[0m14:32:22.098574 [debug] [Thread-1 (]: Writing injected SQL for node "model.ProjetDbt.my_first_dbt_model"
+[0m14:32:22.100591 [debug] [Thread-1 (]: Timing info for model.ProjetDbt.my_first_dbt_model (compile): 2023-04-25 14:32:22.094583 => 2023-04-25 14:32:22.100591
+[0m14:32:22.100591 [debug] [Thread-1 (]: Began executing node model.ProjetDbt.my_first_dbt_model
+[0m14:32:22.146446 [debug] [Thread-1 (]: Writing runtime sql for node "model.ProjetDbt.my_first_dbt_model"
+[0m14:32:22.150434 [debug] [Thread-1 (]: Using snowflake connection "model.ProjetDbt.my_first_dbt_model"
+[0m14:32:22.150434 [debug] [Thread-1 (]: On model.ProjetDbt.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.4.6", "profile_name": "ProjetDbt", "target_name": "dev", "node_id": "model.ProjetDbt.my_first_dbt_model"} */
+create or replace transient table AIRBNB.RAW.my_first_dbt_model  as
+        (/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+        );
+[0m14:32:22.151431 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m14:32:24.305433 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 2 seconds
+[0m14:32:24.327371 [debug] [Thread-1 (]: Timing info for model.ProjetDbt.my_first_dbt_model (execute): 2023-04-25 14:32:22.101601 => 2023-04-25 14:32:24.327371
+[0m14:32:24.328369 [debug] [Thread-1 (]: On model.ProjetDbt.my_first_dbt_model: Close
+[0m14:32:24.481296 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c99a7555-aad9-4af1-ba30-8335f935661d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020B2D26B990>]}
+[0m14:32:24.481296 [info ] [Thread-1 (]: 1 of 3 OK created sql table model RAW.my_first_dbt_model ....................... [[32mSUCCESS 1[0m in 2.39s]
+[0m14:32:24.484289 [debug] [Thread-1 (]: Finished running node model.ProjetDbt.my_first_dbt_model
+[0m14:32:24.485286 [debug] [Thread-1 (]: Began running node model.ProjetDbt.src_hosts
+[0m14:32:24.485286 [info ] [Thread-1 (]: 2 of 3 START sql view model RAW.src_hosts ...................................... [RUN]
+[0m14:32:24.487298 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.ProjetDbt.src_hosts'
+[0m14:32:24.487298 [debug] [Thread-1 (]: Began compiling node model.ProjetDbt.src_hosts
+[0m14:32:24.489276 [debug] [Thread-1 (]: Writing injected SQL for node "model.ProjetDbt.src_hosts"
+[0m14:32:24.491270 [debug] [Thread-1 (]: Timing info for model.ProjetDbt.src_hosts (compile): 2023-04-25 14:32:24.488280 => 2023-04-25 14:32:24.491270
+[0m14:32:24.492278 [debug] [Thread-1 (]: Began executing node model.ProjetDbt.src_hosts
+[0m14:32:24.525178 [debug] [Thread-1 (]: Writing runtime sql for node "model.ProjetDbt.src_hosts"
+[0m14:32:24.528174 [debug] [Thread-1 (]: Using snowflake connection "model.ProjetDbt.src_hosts"
+[0m14:32:24.529168 [debug] [Thread-1 (]: On model.ProjetDbt.src_hosts: /* {"app": "dbt", "dbt_version": "1.4.6", "profile_name": "ProjetDbt", "target_name": "dev", "node_id": "model.ProjetDbt.src_hosts"} */
+create or replace   view AIRBNB.RAW.src_hosts
+  
+   as (
+    WITH raw_listings AS (
+    SELECT
+    *
+    FROM
+        AIRBNB.RAW.RAW_LISTINGS
+)
+SELECT
+    host_id AS listing_id,
+    name AS listing_host_name,
+    listing_url,
+    room_type,
+    minimum_nights,
+    host_id,
+    price AS price_str,
+    created_at,
+    updated_at
+FROM
+    raw_listings
+  );
+[0m14:32:24.529168 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:32:25.931579 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1 seconds
+[0m14:32:25.936548 [debug] [Thread-1 (]: Timing info for model.ProjetDbt.src_hosts (execute): 2023-04-25 14:32:24.492278 => 2023-04-25 14:32:25.935556
+[0m14:32:25.936548 [debug] [Thread-1 (]: On model.ProjetDbt.src_hosts: Close
+[0m14:32:26.028039 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c99a7555-aad9-4af1-ba30-8335f935661d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020B2CF11ED0>]}
+[0m14:32:26.028039 [info ] [Thread-1 (]: 2 of 3 OK created sql view model RAW.src_hosts ................................. [[32mSUCCESS 1[0m in 1.54s]
+[0m14:32:26.029269 [debug] [Thread-1 (]: Finished running node model.ProjetDbt.src_hosts
+[0m14:32:26.030277 [debug] [Thread-1 (]: Began running node model.ProjetDbt.my_second_dbt_model
+[0m14:32:26.030277 [info ] [Thread-1 (]: 3 of 3 START sql view model RAW.my_second_dbt_model ............................ [RUN]
+[0m14:32:26.032265 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.ProjetDbt.my_second_dbt_model'
+[0m14:32:26.032265 [debug] [Thread-1 (]: Began compiling node model.ProjetDbt.my_second_dbt_model
+[0m14:32:26.035266 [debug] [Thread-1 (]: Writing injected SQL for node "model.ProjetDbt.my_second_dbt_model"
+[0m14:32:26.037251 [debug] [Thread-1 (]: Timing info for model.ProjetDbt.my_second_dbt_model (compile): 2023-04-25 14:32:26.033262 => 2023-04-25 14:32:26.037251
+[0m14:32:26.037251 [debug] [Thread-1 (]: Began executing node model.ProjetDbt.my_second_dbt_model
+[0m14:32:26.041273 [debug] [Thread-1 (]: Writing runtime sql for node "model.ProjetDbt.my_second_dbt_model"
+[0m14:32:26.043236 [debug] [Thread-1 (]: Using snowflake connection "model.ProjetDbt.my_second_dbt_model"
+[0m14:32:26.044233 [debug] [Thread-1 (]: On model.ProjetDbt.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.4.6", "profile_name": "ProjetDbt", "target_name": "dev", "node_id": "model.ProjetDbt.my_second_dbt_model"} */
+create or replace   view AIRBNB.RAW.my_second_dbt_model
+  
+   as (
+    -- Use the `ref` function to select from other models
+
+select *
+from AIRBNB.RAW.my_first_dbt_model
+where id = 1
+  );
+[0m14:32:26.044233 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:32:27.035209 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1 seconds
+[0m14:32:27.039183 [debug] [Thread-1 (]: Timing info for model.ProjetDbt.my_second_dbt_model (execute): 2023-04-25 14:32:26.038249 => 2023-04-25 14:32:27.039183
+[0m14:32:27.040183 [debug] [Thread-1 (]: On model.ProjetDbt.my_second_dbt_model: Close
+[0m14:32:27.133076 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c99a7555-aad9-4af1-ba30-8335f935661d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020B2CD62050>]}
+[0m14:32:27.134074 [info ] [Thread-1 (]: 3 of 3 OK created sql view model RAW.my_second_dbt_model ....................... [[32mSUCCESS 1[0m in 1.10s]
+[0m14:32:27.135488 [debug] [Thread-1 (]: Finished running node model.ProjetDbt.my_second_dbt_model
+[0m14:32:27.138515 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m14:32:27.139480 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:32:27.139480 [debug] [MainThread]: Connection 'list_AIRBNB' was properly closed.
+[0m14:32:27.140510 [debug] [MainThread]: Connection 'list_AIRBNB_RAW' was properly closed.
+[0m14:32:27.141478 [debug] [MainThread]: Connection 'model.ProjetDbt.my_second_dbt_model' was properly closed.
+[0m14:32:27.142473 [info ] [MainThread]: 
+[0m14:32:27.143470 [info ] [MainThread]: Finished running 1 table model, 2 view models in 0 hours 0 minutes and 8.38 seconds (8.38s).
+[0m14:32:27.145465 [debug] [MainThread]: Command end result
+[0m14:32:27.154473 [info ] [MainThread]: 
+[0m14:32:27.155441 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:32:27.156435 [info ] [MainThread]: 
+[0m14:32:27.157432 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+[0m14:32:27.159428 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020B2CDC0390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020B2CE7C8D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020B2CFE9C10>]}
+[0m14:32:27.160430 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-04-25 14:40:00.244880 | df6d2f51-d89e-46b7-b54d-35883e1f6c0f ==============================
+[0m14:40:00.244880 [info ] [MainThread]: Running with dbt=1.4.6
+[0m14:40:00.248566 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\golia\\.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m14:40:00.248566 [debug] [MainThread]: Tracking: tracking
+[0m14:40:00.249609 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D967969890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D967460A50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D9677C9BD0>]}
+[0m14:40:00.269511 [debug] [MainThread]: checksum: 0325e47f1211ebbdb24627f81d8289d705fdb573380364d07ab35982cb3d57cd, vars: {}, profile: None, target: None, version: 1.4.6
+[0m14:40:00.368244 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 2 files added, 0 files changed.
+[0m14:40:00.369243 [debug] [MainThread]: Partial parsing: added file: ProjetDbt://models\src\review.sql
+[0m14:40:00.369243 [debug] [MainThread]: Partial parsing: added file: ProjetDbt://models\dim\dim.sql
+[0m14:40:00.384202 [debug] [MainThread]: 1699: static parser successfully parsed src\review.sql
+[0m14:40:00.428085 [debug] [MainThread]: 1699: static parser successfully parsed dim\dim.sql
+[0m14:40:00.435073 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D9684D7710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D9677CA8D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D96775C750>]}
+[0m14:40:00.436065 [debug] [MainThread]: Flushing usage events
+[0m14:40:00.838577 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.ProjetDbt.dim' (models\dim\dim.sql) depends on a node named 'src_listings' which was not found
+
+
+============================== 2023-04-25 14:50:54.099595 | 79c0fae4-a1b2-4e7b-ba98-98dd96d8d168 ==============================
+[0m14:50:54.099595 [info ] [MainThread]: Running with dbt=1.4.6
+[0m14:50:54.103591 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\golia\\.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'port': 8080, 'open_browser': True, 'which': 'serve', 'indirect_selection': 'eager'}
+[0m14:50:54.104581 [debug] [MainThread]: Tracking: tracking
+[0m14:50:54.104581 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B4E9BBE5D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B4E9BBF5D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B4E8B9D390>]}
+[0m14:50:54.114556 [info ] [MainThread]: Serving docs at 0.0.0.0:8080
+[0m14:50:54.115557 [info ] [MainThread]: To access from your browser, navigate to:  http://localhost:8080
+[0m14:50:54.117548 [info ] [MainThread]: 
+[0m14:50:54.118548 [info ] [MainThread]: 
+[0m14:50:54.119543 [info ] [MainThread]: Press Ctrl+C to exit.
